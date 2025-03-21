@@ -1,4 +1,4 @@
-mport numpy as np
+import numpy as np
 
 class JacobiSolver:
     def __init__(self, A, b, x0=None, tol=1e-10, max_iter=1000):
