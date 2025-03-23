@@ -65,10 +65,10 @@ class Jacobi:
         return x
 
 # Ejemplo de uso
-A = np.array([[4, -1, 0], [-1, 4, -1], [0, -1, 4]])
-b = np.array([1, 2, 3])
+# A = np.array([[4, -1, 0], [-1, 4, -1], [0, -1, 4]])
+# b = np.array([1, 2, 3])
 
-solver = JacobiSolver(A, b)
-solucion = solver.solve()
-if solucion is not None:
-    print("Solución:", solucion)
+# solver = Jacobi(A, b)
+# solucion = solver.solve()
+# if solucion is not None:
+#     print("Solución:", solucion)

@@ -131,26 +131,26 @@ def comprobar_matriz_factorizable(matriz):
     return determinante
 
 
-A = [[2, 1, 1],
-     [4, 1, 0],
-     [-2, 2, 1]]
+# A = [[2, 1, 1],
+#      [4, 1, 0],
+#      [-2, 2, 1]]
 
-b = [4, 1, 2]
+# b = [4, 1, 2]
 
-L, U = factorizacion_lu(A)
+# L, U = factorizacion_lu(A)
 
-if L and U:
-    print("Matriz L:")
-    for fila in L:
-        print(fila)
-    print("\nMatriz U:")
-    for fila in U:
-        print(fila)
+# if L and U:
+#     print("Matriz L:")
+#     for fila in L:
+#         print(fila)
+#     print("\nMatriz U:")
+#     for fila in U:
+#         print(fila)
 
-    x = resolver_sistema_lu(L, U, b)
-    if x:
-        print("\nVector solución x:", x)
-    else:
-        print("\nNo se pudo resolver el sistema.")
-else:
-    print("La matriz no es factorizable.")
+#     x = resolver_sistema_lu(L, U, b)
+#     if x:
+#         print("\nVector solución x:", x)
+#     else:
+#         print("\nNo se pudo resolver el sistema.")
+# else:
+#     print("La matriz no es factorizable.")

@@ -13,12 +13,17 @@ class Matriz():
 
         for i in range(self.filas):
             for j in range(self.columnas):
-                try:
                 
-                    self.matriz[i][j] = float(input(f"Introduce el valor de la fila {i+1} y columna {j+1}: "))
+                while True:
+                    try:
+                        self.matriz[i][j] = float(input(f"Valor de la fila {i+1} y columna {j+1}: "))
+                        break
+                    except ValueError:
+                        print("Por favor ingrese un número válido.")
+                        continue
 
-                except ValueError:
-                    print("Introduce un número entero") 
-                    self.matriz[i][j] = float(input(f"Introduce el valor de la fila {i+1} y columna {j+1}: "))
-
+    def imprimirMatriz(self):
+        for i in range(self.filas):
+            print(self.matriz[i])
+        
 
