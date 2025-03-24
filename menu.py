@@ -1,6 +1,8 @@
 from LU  import factorizacion_lu, resolver_sistema_lu
 from Jacobi import Jacobi
 import gauss_jordan
+from app import app
+
 
 
 def menu(matriz1, b):
@@ -8,8 +10,7 @@ def menu(matriz1, b):
     print("menu")
     print("====================================")
 
-    print("1. Gauss Jordan")    
-     #GAUSS JORDAN       
+    print("1. Gauss Jordan")         
     print("2. LU")
     print("3. Jacobi")
     print("4. Salir")
@@ -47,7 +48,7 @@ def menu(matriz1, b):
         if solucion is not None:
             print(f"Solución:" , solucion)
 
-        print("====================================")
+    print("====================================")
     print("1. resolver otro sistema de ecuaciones")
     print("2.resolver otro sistema de ecuaciones con otro metodo")
     print("3. salir")

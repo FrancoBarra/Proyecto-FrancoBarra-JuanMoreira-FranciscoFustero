@@ -3,9 +3,13 @@ def factorizacion_lu(matriz):
     filas = len(matriz)
     columnas = len(matriz[0])
 
-    if filas != columnas or filas != 3:
+    if filas != columnas or filas > 4:
+        print("La matriz debe ser cuadrada y de tamaño 2x2, 3x3 o 4x4.")
         return None, None  
 
+    
+    elif comprobar_matriz_factorizable(matriz) == 0:
+        return None, None
     #Creacion inicial de matrices
    
     u =[]
